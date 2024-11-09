@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+
+    --body-font-size: 0.938rem;
+    --body-font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: var(--slate-300);
+    font-size: var(--body-font-size);
+    font-family: var(--body-font-family);
+    height: 100vh;
+
+    display: grid;
+    place-content: center;
+}
+
+h2 {
+    color: var(--slate-900);
+    font-weight: 700;
+}
+
+p {
+    color: var(--slate-500);
+    font-weight: 400;
+}
+
+.qr-container {
+    background-color: var(--white);
+    width: 20rem;
+    padding: 1rem 1rem 2.5rem 1rem;
+    border-radius: 1.25rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.qr-description {
+    padding: 0 1rem;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
